@@ -1,0 +1,208 @@
+<!-- TLR Show Lookup – GHL Custom Code (no GA/Pixel) -->
+<div class="tlr-lookup body">
+  <div class="employee-header">
+    <div class="header-wrapper">
+      <img src="https://cdn.prod.website-files.com/62165a818912887e25dcbf4b/621e8a8262f213cb4fb3d703_TLR_SVG-LOGO-01.svg" alt="The Listening Room logo." class="header-logo" />
+      <div class="dropdown-1">
+        <div class="dropdown-toggle-1">
+          <div class="dropdown-text">Navigation</div>
+        </div>
+        <nav class="dropdown-list-3">
+          <a href="/nashville-show-info" class="dropdown-link">Nashville Shows</a>
+          <a href="/pigeon-forge-show-info" class="dropdown-link">Pigeon Forge Shows</a>
+          <a href="/" class="dropdown-link">Website Home</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="div-block-62">
+    <!-- Date search -->
+    <div class="div-block-56">
+      <h1 class="search-heading">Search:</h1>
+
+      <div class="html-embed-18">
+        <select name="month" class="search-select" id="select-month">
+          <option value="">Select Month...</option>
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+      </div>
+
+      <div class="html-embed-18">
+        <select name="day" class="search-select" id="select-day">
+          <option value="Select Day">Select Day</option>
+        </select>
+      </div>
+
+      <a id="custom-search" href="#" class="search-btn grey">Search</a>
+    </div>
+
+    <div class="w-layout-grid grid-10">
+      <!-- Shows (left) -->
+      <div class="grid-container">
+        <h2 id="show-heading" show="heading" class="grid-heading">Shows</h2>
+        <div id="show-clear" show="list" class="show-container">
+          <!-- Cards injected by Nashville2024FINAL1.js -->
+        </div>
+      </div>
+
+      <!-- Parties (middle) -->
+      <div class="grid-container">
+        <h2 id="party-heading" party="heading" class="grid-heading">Parties</h2>
+        <div class="show-container">
+          <div id="party-clear" party="list" class="w-layout-grid party-grid">
+            <!-- Party rows injected by Nashville2024FINAL1.js -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Scanner & Order management (right) -->
+      <div class="edit-wrapper">
+        <div class="right-search-div">
+          <div class="search-div">
+            <div id="applyCSS" class="barcode-scanner">
+              <div id="qr-reader" style="width: 320px"></div>
+            </div>
+
+            <div class="ecwid-edit-container">
+              <div class="search-wrapper">
+                <div class="ecwid-orderid-input">
+                  <input type="text" class="text-field" id="orderNum" placeholder="Order ID" />
+                </div>
+                <a href="#" id="search" class="ecwid-search-btn">Search</a>
+              </div>
+
+              <div class="number-tickets-container">
+                <div class="number-tickets">NUMBER OF SHOWS:</div>
+                <div id="tickets" class="number-tickets">4</div>
+              </div>
+
+              <div id="fStatus" class="admissions-overview">Pending Search or Scan</div>
+
+              <div class="customer-info-div">
+                <div class="name-title">Customer's Name:</div>
+                <div class="name-container">
+                  <div id="firstName" class="name-text">Someone's</div>
+                  <div class="name-text">&nbsp;</div>
+                  <div id="lastName" class="name-text">Name</div>
+                </div>
+
+                <div class="name-title">Customer's Email:</div>
+                <div class="name-container">
+                  <div id="email" class="name-text">Email@something.com</div>
+                </div>
+
+                <div class="name-title">Customer's Order Number:</div>
+                <div class="name-container">
+                  <div id="qrCode" class="name-text">KCKIE</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Order line admissions -->
+          <div class="list-control-wrap">
+            <div id="list-container" class="list-container">
+              <!-- Line items injected by RevisionTickets3.js -->
+            </div>
+
+            <div class="save-container">
+              <div class="make-changes">Make Changes:</div>
+              <a href="#" id="edit" class="save-admissions-2">Save Changes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /right -->
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Minimal styling tuned for GHL */
+  .body { background:#13141b; color:#fff; font-family: system-ui, -apple-system, Segoe UI, Roboto, "Barlow", sans-serif; }
+  .employee-header { background:#0e0f12; border-bottom:1px solid rgba(255,255,255,.08); }
+  .header-wrapper { max-width:1200px; margin:0 auto; padding:14px 16px; display:flex; align-items:center; gap:16px; }
+  .header-logo { height:36px; }
+  .dropdown-text { color:#fff; font-weight:600; text-transform:uppercase; }
+  .dropdown-list-3 a { color:#fff; display:block; padding:6px 0; text-decoration:none; opacity:.9; }
+  .dropdown-list-3 a:hover { opacity:1; }
+
+  .div-block-62 { max-width:1200px; margin:24px auto; padding:0 16px; }
+  .search-heading { margin:0 0 8px; font-size:22px; }
+  .search-select { height:42px; padding:4px 10px; margin-right:8px; }
+  .search-btn { display:inline-block; background:#8d1d18; color:#fff; padding:10px 14px; text-transform:uppercase; font-weight:600; letter-spacing:.02em; }
+  .search-btn.grey { opacity:.6; pointer-events:none; }
+
+  .grid-10 { display:grid; grid-template-columns: 1fr 1fr 1fr; gap:16px; }
+  .grid-container { background:#0e0f12; border:1px solid rgba(255,255,255,.08); padding:16px; border-radius:8px; }
+  .grid-heading { margin:0 0 12px; font-size:20px; }
+
+  .show-container { display:flex; flex-direction:column; gap:16px; }
+  .show-div { background:#14161d; border:1px solid rgba(255,255,255,.06); padding:12px; border-radius:8px; }
+  .show-heading { margin:0 0 8px; font-size:18px; }
+  .show-time-div { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+  .date-container { display:flex; gap:6px; align-items:center; }
+  .show-date, .show-time { font-weight:600; }
+  .info-wrapper { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+  .info-container { display:flex; gap:6px; align-items:center; }
+  .status-div { margin-top:10px; display:flex; gap:8px; align-items:center; }
+  .status-btn, .show-btn { display:inline-block; background:#8d1d18; color:#fff; padding:8px 12px; border-radius:6px; text-transform:uppercase; font-weight:600; }
+
+  .party-grid { display:grid; grid-template-columns:1fr; gap:12px; }
+  .party-div { background:#14161d; border:1px solid rgba(255,255,255,.06); padding:12px; border-radius:8px; }
+  .party-div.checked { opacity:.55; }
+
+  .barcode-scanner button,
+  .barcode-scanner input,
+  .barcode-scanner select { background:#8d1d18; color:#fff; border:0; min-height:35px; font-weight:600; text-transform:uppercase; }
+
+  .text-field { width:170px; height:50px; color:#000; font-size:20px; background:#fff; padding-left:10px; }
+  .ecwid-search-btn { background:#8d1d18; color:#fff; padding:12px 14px; font-weight:700; text-transform:uppercase; display:inline-block; }
+
+  .admissions-overview { margin:12px 0; font-weight:600; }
+  .list-container { display:flex; flex-direction:column; gap:12px; }
+  .list-item { background:#14161d; border:1px solid rgba(255,255,255,.06); padding:12px; border-radius:8px; }
+  .list-item.finished { opacity:.55; }
+  .list-admissions-change-div { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .save-container { margin-top:12px; display:flex; align-items:center; gap:12px; }
+  .save-admissions-2 { background:#8d1d18; color:#fff; padding:10px 14px; border-radius:8px; font-weight:700; text-transform:uppercase; }
+
+  /* Slim scrollbar to match brand */
+  ::-webkit-scrollbar{width:8px;padding:2.5px}
+  ::-webkit-scrollbar-track{background:transparent}
+  ::-webkit-scrollbar-thumb{background:#8d1d18;border-radius:0}
+  
+  @media (max-width: 1024px) {
+    .grid-10 { grid-template-columns: 1fr; }
+  }
+  
+  .order-button{
+  display:inline-block;padding:8px 12px;margin-left:6px;background:#8d1d18;color:#fff;font-weight:700;
+  text-decoration:none;border-radius:6px;border:none;line-height:1;cursor:pointer;
+  transition:transform .05s ease, background-color .2s ease, box-shadow .2s ease;
+}
+.order-button:hover,.order-button:focus{background:#a62820;box-shadow:0 0 0 3px rgba(141,29,24,.25);outline:none}
+.order-button:active{transform:translateY(1px)}
+</style>
+
+<!-- jQuery (required by your scripts) -->
+<script defer src="https://cdn.jsdelivr.net/gh/Santiago-CrushTeam/tlr-show-lookup@22976cd4776a7256cc8501b0d907b2a7d0cec3ee/jquery.min.js" crossorigin="anonymous"></script>
+
+<!-- QR scanner (your packaged html5-qrcode build) -->
+<script defer src="https://cdn.jsdelivr.net/gh/Santiago-CrushTeam/tlr-show-lookup@22976cd4776a7256cc8501b0d907b2a7d0cec3ee/QR-Code_2.2.1min.js"></script>
+
+<!-- Ecwid workflow scripts (replace with your own repo/CDN if moved) -->
+<script defer src="https://cdn.jsdelivr.net/gh/Santiago-CrushTeam/tlr-show-lookup@22976cd4776a7256cc8501b0d907b2a7d0cec3ee/RevisionTickets3.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/Santiago-CrushTeam/tlr-show-lookup@a5d74ca60c72688e22765842e09c91af679d5295/Nashville2024FINAL1.js"></script>
