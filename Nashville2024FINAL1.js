@@ -52,7 +52,7 @@ var productSearchResults,searchCustomers,searchCounter,searchResults,funcMonth,f
                 <div party="quant" class="party-size">${i[r].tickets}</div>
                 <div class="party-order-div">
                     <div class="num-text">Order #:&nbsp;</div>
-                    <div party="order" class="party-order">${i[r].orderNum}</div>
+                    <a party="order" class="party-order order-button" href="#" role="button" tabindex="0" aria-label="Open order ${i[r].orderNum}">${i[r].orderNum}</a>
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@ var productSearchResults,searchCustomers,searchCounter,searchResults,funcMonth,f
                 <div party="quant" class="party-size">${a[l].tickets}</div>
                 <div class="party-order-div">
                     <div class="num-text">Order #:&nbsp;</div>
-                    <div party="order" class="party-order">${a[l].orderNum}</div>
+                    <a party="order" class="party-order order-button" href="#" role="button" tabindex="0" aria-label="Open order ${a[l].orderNum}">${a[l].orderNum}</a>
                 </div>
             </div>
         </div>
